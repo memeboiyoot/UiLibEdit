@@ -1143,22 +1143,22 @@ function Library:tab(options)
 		UserInputService.InputEnded:connect(function(key)
 			if key.UserInputType == Enum.UserInputType.MouseButton1 then
 				down = false
-				
 				tabButton:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or (hovered and 0.3) or 1}
 			end
 
 		end)
 
 		tabButton.MouseButton1Click:Connect(function()
-		     
 			for _, tabInfo in next, self.Tabs do
 				local page = tabInfo[1]
 				local button = tabInfo[2]
 				page.Visible = false
+			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			end
 			selectedTab:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or 1}
 			selectedTab = tabButton
 			tab.Visible = true
+			                          local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			tabButton.BackgroundTransparency = 0
 			Library.UrlLabel.Text = Library.Url .. "/" .. options.Name:lower()
 		end)
