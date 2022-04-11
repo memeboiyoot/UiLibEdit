@@ -592,7 +592,8 @@ function Library:create(options)
 		getgenv().MercuryUI = closeUI
 	end
 
-	closeButton.MouseButton1Click:connect(function()       
+	closeButton.MouseButton1Click:connect(function() 
+	    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 		closeUI()
 	end)
 
@@ -1376,6 +1377,7 @@ function Library:toggle(options)
 		end)
 
 		toggleContainer.MouseButton1Down:connect(function()
+		    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			toggleContainer:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Secondary, 20)}
 		end)
 
@@ -1543,6 +1545,7 @@ function Library:dropdown(options)
 			end)
 
 			newItem.MouseButton1Down:connect(function()
+			    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 				newItem:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Tertiary, 10)}
 			end)
 
@@ -1599,6 +1602,7 @@ function Library:dropdown(options)
 		end)
 
 		dropdownContainer.MouseButton1Down:connect(function()
+		    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			dropdownContainer:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Secondary, 20)}
 		end)
 
@@ -1697,6 +1701,7 @@ function Library:dropdown(options)
 				end)
 
 				newItem.MouseButton1Down:connect(function()
+				    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 					newItem:tween{BackgroundColor3 = Library:lighten(Library.CurrentTheme.Tertiary, 10)}
 				end)
 
@@ -1926,6 +1931,7 @@ function Library:color_picker(options)
 		end)
 
 		buttonContainer.MouseButton1Down:connect(function()
+		    
 			buttonContainer:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Secondary, 20)}
 		end)
 
