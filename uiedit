@@ -1136,7 +1136,7 @@ function Library:tab(options)
 
 
 		tabButton.MouseButton1Down:connect(function()
-		      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://1673280232"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+		    
 			down = true
 			tabButton:tween{BackgroundTransparency = 0}
 		end)
@@ -1144,14 +1144,14 @@ function Library:tab(options)
 		UserInputService.InputEnded:connect(function(key)
 			if key.UserInputType == Enum.UserInputType.MouseButton1 then
 				down = false
-				  local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://1673280232"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+				
 				tabButton:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or (hovered and 0.3) or 1}
 			end
 
 		end)
 
 		tabButton.MouseButton1Click:Connect(function()
-		      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://1673280232"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+		     
 			for _, tabInfo in next, self.Tabs do
 				local page = tabInfo[1]
 				local button = tabInfo[2]
@@ -1173,7 +1173,7 @@ function Library:tab(options)
 		end)
 
 		quickAccessButton.MouseButton1Click:connect(function()
-		      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://1673280232"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+		    
 			if not tabButton.Visible then
 				tabButton.Parent = self.navigation.AbsoluteObject
 				tabButton.Size = UDim2.new(0, 50, tabButton.Size.Y.Scale, tabButton.Size.Y.Offset)
@@ -1226,7 +1226,7 @@ function Library:tab(options)
 	})
 
 	tabButtonClose.MouseButton1Click:connect(function()
-	      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://1673280232"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+	  
 		tabButton:fade(true, Library.CurrentTheme.Main, 0.1)
 		tabButton:tween({Size = UDim2.new(0, 50, tabButton.Size.Y.Scale, tabButton.Size.Y.Offset), Length = 0.1}, function()
 			tabButton.Visible = false
