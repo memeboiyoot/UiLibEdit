@@ -592,8 +592,7 @@ function Library:create(options)
 		getgenv().MercuryUI = closeUI
 	end
 
-	closeButton.MouseButton1Click:connect(function()
-	                      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://1673280232"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+	closeButton.MouseButton1Click:connect(function()       
 		closeUI()
 	end)
 
