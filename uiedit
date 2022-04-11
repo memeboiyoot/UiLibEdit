@@ -1150,10 +1150,10 @@ function Library:tab(options)
 
 		tabButton.MouseButton1Click:Connect(function()
 			for _, tabInfo in next, self.Tabs do
+			    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 				local page = tabInfo[1]
 				local button = tabInfo[2]
 				page.Visible = false
-			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			end
 			selectedTab:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or 1}
 			selectedTab = tabButton
@@ -1171,7 +1171,7 @@ function Library:tab(options)
 		end)
 
 		quickAccessButton.MouseButton1Click:connect(function()
-		    
+		
 			if not tabButton.Visible then
 				tabButton.Parent = self.navigation.AbsoluteObject
 				tabButton.Size = UDim2.new(0, 50, tabButton.Size.Y.Scale, tabButton.Size.Y.Offset)
@@ -1224,7 +1224,7 @@ function Library:tab(options)
 	})
 
 	tabButtonClose.MouseButton1Click:connect(function()
-	  
+			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 		tabButton:fade(true, Library.CurrentTheme.Main, 0.1)
 		tabButton:tween({Size = UDim2.new(0, 50, tabButton.Size.Y.Scale, tabButton.Size.Y.Offset), Length = 0.1}, function()
 			tabButton.Visible = false
@@ -1834,6 +1834,7 @@ function Library:button(options)
 		end)
 
 		buttonContainer.MouseButton1Down:connect(function()
+		    			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			buttonContainer:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Secondary, 20)}
 		end)
 
@@ -2845,6 +2846,7 @@ function Library:credit(options)
 			})
 
 			v3rmillionContainer.MouseButton1Click:connect(function()
+			    			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 				setclipboard(options.V3rmillion)
 			end)
 		end
@@ -2964,6 +2966,7 @@ function Library:_theme_selector()
 			}):round(100)
 
 			theme.MouseButton1Click:connect(function()
+			    			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 				Library:change_theme(Library.Themes[themeName])
 				updateSettings("Theme", themeName)
 			end)
@@ -3210,6 +3213,7 @@ function Library:prompt(options)
 			end)
 
 			button.MouseButton1Down:connect(function()
+			    			 local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 				button:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Tertiary, 20)}
 			end)
 
