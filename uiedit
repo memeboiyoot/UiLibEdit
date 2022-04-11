@@ -593,7 +593,7 @@ function Library:create(options)
 	end
 
 	closeButton.MouseButton1Click:connect(function()
-	                      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+	                    
 		closeUI()
 	end)
 
@@ -733,7 +733,7 @@ function Library:create(options)
 		end)
 
 		homeButton.MouseButton1Click:Connect(function()
-		                      local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+		                    
 			for _, tabInfo in next, tabs do
 				local page = tabInfo[1]
 				local button = tabInfo[2]
@@ -1074,7 +1074,7 @@ function Library:tab(options)
 	}, options)
 
 	local tab = self.container:object("ScrollingFrame", {
-	                     local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
+	                   
 		AnchorPoint = Vector2.new(0, 1),
 		Visible = false,
 		BackgroundTransparency = 1,
@@ -1138,6 +1138,7 @@ function Library:tab(options)
 
 		tabButton.MouseButton1Down:connect(function()
 			down = true
+  local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			tabButton:tween{BackgroundTransparency = 0}
 		end)
 
