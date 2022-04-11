@@ -719,6 +719,7 @@ function Library:create(options)
 		end)
 
 		homeButton.MouseButton1Down:connect(function()
+		    			    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			down = true
 			homeButton:tween{BackgroundTransparency = 0}
 		end)
@@ -999,6 +1000,7 @@ function Library:notification(options)
 	})
 
 	exit.MouseButton1Click:Connect(function()
+	    			    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 		fadeOut()
 	end)
 
@@ -1135,7 +1137,7 @@ function Library:tab(options)
 
 
 		tabButton.MouseButton1Down:connect(function()
-		    
+		    			    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 			down = true
 			tabButton:tween{BackgroundTransparency = 0}
 		end)
@@ -1150,7 +1152,6 @@ function Library:tab(options)
 
 		tabButton.MouseButton1Click:Connect(function()
 			for _, tabInfo in next, self.Tabs do
-			    local a=Instance.new("Sound",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)a.SoundId="rbxassetid://537744814"a.Looped=false;a.Playing=true;a.Pitch=1;wait()
 				local page = tabInfo[1]
 				local button = tabInfo[2]
 				page.Visible = false
